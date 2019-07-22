@@ -545,7 +545,7 @@ gitJsonPayloadCreateTag = b"""
   "organization": {
     "login": "buildbot",
     "url": "https://api.github.com/orgs/buildbot",
-    "description": "Continous integration and delivery framework"
+    "description": "Continuous integration and delivery framework"
   },
   "sender": {
     "login": "userid",

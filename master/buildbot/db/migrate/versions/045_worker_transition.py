@@ -220,7 +220,7 @@ def _drop_buildslaves(migrate_engine):
 def _remove_invalid_references_in_builds(migrate_engine):
     # 'buildslaveid' column of 'builds' table don't have Foreign Key
     # constraint on 'id' column of 'buildslaves' table, so it is
-    # possible that that reference is invalid.
+    # possible that the reference is invalid.
     # Remove such invalid references for easier resolve of #3088 later.
 
     metadata = sa.MetaData()

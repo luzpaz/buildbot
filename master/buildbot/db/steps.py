@@ -131,7 +131,7 @@ class StepsConnectorComponent(base.DBConnectorComponent):
         return self.db.pool.do(thd)
 
     def addURL(self, stepid, name, url, _racehook=None):
-        # This methods adds an URL to the db
+        # This methods adds a URL to the db
         # This is a read modify write and thus there is a possibility
         # that several urls are added at the same time (e.g with a deferredlist
         # at the end of a step)

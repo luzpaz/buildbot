@@ -13,7 +13,7 @@ class Collection {
         angular.isArray = (Array.isArray = arg => arg instanceof Array);
         CollectionInstance = class CollectionInstance extends Array {
             constructor(restPath, query, accessor) {
-                // this contructor is used to construct completely new instances only.
+                // this constructor is used to construct completely new instances only.
                 // We override constructor property for existing instances so that
                 // Array.prototype.filter() passes the restPath, query and accessor properties
                 // to the new instance.

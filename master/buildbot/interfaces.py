@@ -773,7 +773,7 @@ class IBuildStatus(Interface):
 
     def getLogs():
         """Return a list of logs that describe the build as a whole. Some
-        steps will contribute their logs, while others are are less important
+        steps will contribute their logs, while others are less important
         and will only be accessible through dictionary obtained from
         `getSteps`.  Each log is an object which implements the IStatusLog
         interface."""

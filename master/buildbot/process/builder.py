@@ -98,7 +98,7 @@ class Builder(util_service.ReconfigurableServiceMixin,
         self.config = builder_config
 
         # allocate  builderid now, so that the builder is visible in the web
-        # UI; without this, the builder wouldn't appear until it preformed a
+        # UI; without this, the builder wouldn't appear until it performed a
         # build.
         builderid = yield self.getBuilderId()
 

@@ -34,7 +34,7 @@ Following environment variables are supported for configuration:
     The tarball must contain a directory, which will contain a master.cfg file in it.
     The tarball may contain a twisted.tac file in it, which can be used to configure the twisted logging system (e.g to log in logstash instead of the default stdout).
     The tarball will be extracted in a directory named ``$BUILDBOT_CONFIG_DIR`` in the master directory, and can contain additional python module that the master.cfg can load.
-    If ``BUILDBOT_CONFIG_URL`` does not end with .tar.gz, it is considered to be an URL to the direct ``master.cfg``
+    If ``BUILDBOT_CONFIG_URL`` does not end with .tar.gz, it is considered to be a URL to the direct ``master.cfg``
 
 * ``BUILDBOT_CONFIG_DIR`` directory where to extract the config tarball within the master directory.
   It is important so that you can do relative imports in your master.cfg like it is done in the metabbotcfg (https://github.com/buildbot/metabbotcfg)
